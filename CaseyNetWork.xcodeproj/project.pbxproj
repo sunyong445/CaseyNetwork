@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9D8819E219EB3330047065B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D8819D219EB3330047065B /* AppDelegate.swift */; };
+		C9D881A0219EB3330047065B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D8819F219EB3330047065B /* ViewController.swift */; };
+		C9D881A3219EB3330047065B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9D881A1219EB3330047065B /* Main.storyboard */; };
+		C9D881A5219EB3340047065B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9D881A4219EB3340047065B /* Assets.xcassets */; };
+		C9D881A8219EB3340047065B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9D881A6219EB3340047065B /* LaunchScreen.storyboard */; };
+		C9D881B3219FE5C40047065B /* CaseyNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D881B2219FE5C40047065B /* CaseyNetwork.swift */; };
+		C9D881B5219FECEC0047065B /* CaseyNetReqestInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D881B4219FECEC0047065B /* CaseyNetReqestInfo.swift */; };
+		C9D881B7219FF2D00047065B /* CaseyNetCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D881B6219FF2D00047065B /* CaseyNetCache.swift */; };
+		C9D881B9219FFD340047065B /* CaseyNetwork+MultipleTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D881B8219FFD340047065B /* CaseyNetwork+MultipleTask.swift */; };
+		C9D881BB21A004B10047065B /* CaseyNetwork+Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D881BA21A004B10047065B /* CaseyNetwork+Update.swift */; };
+		C9D881BD21A004D40047065B /* CaseyNetwork+DownFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D881BC21A004D40047065B /* CaseyNetwork+DownFile.swift */; };
+		C9D881BF21A012260047065B /* CaseyNetError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D881BE21A012260047065B /* CaseyNetError.swift */; };
+		C9D881C121A014720047065B /* CaseyNetException.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D881C021A014720047065B /* CaseyNetException.swift */; };
+		D41DC7DE595627BC3FE7613A /* Pods_CaseyNetWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23BBBF63A82FB0FD2BA92FFA /* Pods_CaseyNetWork.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		23BBBF63A82FB0FD2BA92FFA /* Pods_CaseyNetWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CaseyNetWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		618F0A7649B9A7E5AD948D88 /* Pods-CaseyNetWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaseyNetWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CaseyNetWork/Pods-CaseyNetWork.debug.xcconfig"; sourceTree = "<group>"; };
+		9F088C53C3712F050B5285D6 /* Pods-CaseyNetWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaseyNetWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-CaseyNetWork/Pods-CaseyNetWork.release.xcconfig"; sourceTree = "<group>"; };
+		C9D8819A219EB3330047065B /* CaseyNetWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaseyNetWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9D8819D219EB3330047065B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C9D8819F219EB3330047065B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C9D881A2219EB3330047065B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C9D881A4219EB3340047065B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9D881A7219EB3340047065B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C9D881A9219EB3340047065B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9D881B2219FE5C40047065B /* CaseyNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseyNetwork.swift; sourceTree = "<group>"; };
+		C9D881B4219FECEC0047065B /* CaseyNetReqestInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseyNetReqestInfo.swift; sourceTree = "<group>"; };
+		C9D881B6219FF2D00047065B /* CaseyNetCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseyNetCache.swift; sourceTree = "<group>"; };
+		C9D881B8219FFD340047065B /* CaseyNetwork+MultipleTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CaseyNetwork+MultipleTask.swift"; sourceTree = "<group>"; };
+		C9D881BA21A004B10047065B /* CaseyNetwork+Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CaseyNetwork+Update.swift"; sourceTree = "<group>"; };
+		C9D881BC21A004D40047065B /* CaseyNetwork+DownFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CaseyNetwork+DownFile.swift"; sourceTree = "<group>"; };
+		C9D881BE21A012260047065B /* CaseyNetError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseyNetError.swift; sourceTree = "<group>"; };
+		C9D881C021A014720047065B /* CaseyNetException.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseyNetException.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9D88197219EB3330047065B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D41DC7DE595627BC3FE7613A /* Pods_CaseyNetWork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1ACEA524A90253BB5F8C8E68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				618F0A7649B9A7E5AD948D88 /* Pods-CaseyNetWork.debug.xcconfig */,
+				9F088C53C3712F050B5285D6 /* Pods-CaseyNetWork.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C9D88191219EB3330047065B = {
+			isa = PBXGroup;
+			children = (
+				C9D8819C219EB3330047065B /* CaseyNetWork */,
+				C9D8819B219EB3330047065B /* Products */,
+				1ACEA524A90253BB5F8C8E68 /* Pods */,
+				FCB48B225AD0A89A1ADEE93F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C9D8819B219EB3330047065B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9D8819A219EB3330047065B /* CaseyNetWork.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9D8819C219EB3330047065B /* CaseyNetWork */ = {
+			isa = PBXGroup;
+			children = (
+				C9D8819D219EB3330047065B /* AppDelegate.swift */,
+				C9D8819F219EB3330047065B /* ViewController.swift */,
+				C9D881B1219EB88C0047065B /* CaseyNetWork */,
+				C9D881A1219EB3330047065B /* Main.storyboard */,
+				C9D881A4219EB3340047065B /* Assets.xcassets */,
+				C9D881A6219EB3340047065B /* LaunchScreen.storyboard */,
+				C9D881A9219EB3340047065B /* Info.plist */,
+			);
+			path = CaseyNetWork;
+			sourceTree = "<group>";
+		};
+		C9D881B1219EB88C0047065B /* CaseyNetWork */ = {
+			isa = PBXGroup;
+			children = (
+				C9D881B2219FE5C40047065B /* CaseyNetwork.swift */,
+				C9D881C021A014720047065B /* CaseyNetException.swift */,
+				C9D881BE21A012260047065B /* CaseyNetError.swift */,
+				C9D881B4219FECEC0047065B /* CaseyNetReqestInfo.swift */,
+				C9D881B6219FF2D00047065B /* CaseyNetCache.swift */,
+				C9D881B8219FFD340047065B /* CaseyNetwork+MultipleTask.swift */,
+				C9D881BA21A004B10047065B /* CaseyNetwork+Update.swift */,
+				C9D881BC21A004D40047065B /* CaseyNetwork+DownFile.swift */,
+			);
+			path = CaseyNetWork;
+			sourceTree = "<group>";
+		};
+		FCB48B225AD0A89A1ADEE93F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23BBBF63A82FB0FD2BA92FFA /* Pods_CaseyNetWork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9D88199219EB3330047065B /* CaseyNetWork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9D881AC219EB3340047065B /* Build configuration list for PBXNativeTarget "CaseyNetWork" */;
+			buildPhases = (
+				11DB21929C205D1AA05882BD /* [CP] Check Pods Manifest.lock */,
+				C9D88196219EB3330047065B /* Sources */,
+				C9D88197219EB3330047065B /* Frameworks */,
+				C9D88198219EB3330047065B /* Resources */,
+				176D691D953E82C4DE94DBF0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CaseyNetWork;
+			productName = CaseyNetWork;
+			productReference = C9D8819A219EB3330047065B /* CaseyNetWork.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9D88192219EB3330047065B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Casey;
+				TargetAttributes = {
+					C9D88199219EB3330047065B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = C9D88195219EB3330047065B /* Build configuration list for PBXProject "CaseyNetWork" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9D88191219EB3330047065B;
+			productRefGroup = C9D8819B219EB3330047065B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9D88199219EB3330047065B /* CaseyNetWork */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9D88198219EB3330047065B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9D881A8219EB3340047065B /* LaunchScreen.storyboard in Resources */,
+				C9D881A5219EB3340047065B /* Assets.xcassets in Resources */,
+				C9D881A3219EB3330047065B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11DB21929C205D1AA05882BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CaseyNetWork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		176D691D953E82C4DE94DBF0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CaseyNetWork/Pods-CaseyNetWork-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CaseyNetWork/Pods-CaseyNetWork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9D88196219EB3330047065B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9D881BD21A004D40047065B /* CaseyNetwork+DownFile.swift in Sources */,
+				C9D881B7219FF2D00047065B /* CaseyNetCache.swift in Sources */,
+				C9D881A0219EB3330047065B /* ViewController.swift in Sources */,
+				C9D8819E219EB3330047065B /* AppDelegate.swift in Sources */,
+				C9D881B3219FE5C40047065B /* CaseyNetwork.swift in Sources */,
+				C9D881B5219FECEC0047065B /* CaseyNetReqestInfo.swift in Sources */,
+				C9D881B9219FFD340047065B /* CaseyNetwork+MultipleTask.swift in Sources */,
+				C9D881C121A014720047065B /* CaseyNetException.swift in Sources */,
+				C9D881BB21A004B10047065B /* CaseyNetwork+Update.swift in Sources */,
+				C9D881BF21A012260047065B /* CaseyNetError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C9D881A1219EB3330047065B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9D881A2219EB3330047065B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C9D881A6219EB3340047065B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9D881A7219EB3340047065B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9D881AA219EB3340047065B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C9D881AB219EB3340047065B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9D881AD219EB3340047065B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 618F0A7649B9A7E5AD948D88 /* Pods-CaseyNetWork.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CaseyNetWork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Casey.CaseyNetWork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C9D881AE219EB3340047065B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F088C53C3712F050B5285D6 /* Pods-CaseyNetWork.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CaseyNetWork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Casey.CaseyNetWork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9D88195219EB3330047065B /* Build configuration list for PBXProject "CaseyNetWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9D881AA219EB3340047065B /* Debug */,
+				C9D881AB219EB3340047065B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9D881AC219EB3340047065B /* Build configuration list for PBXNativeTarget "CaseyNetWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9D881AD219EB3340047065B /* Debug */,
+				C9D881AE219EB3340047065B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9D88192219EB3330047065B /* Project object */;
+}
