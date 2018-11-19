@@ -23,9 +23,17 @@ class CaseyNetwork: NSObject {
     /* 提供给外部处理框架内的网络数据，有外部实现
      返回 true 数据有异常，
      返回 false 数据没问题*/
-    static public var exceptionHandleOfData:((inout Dictionary<String, AnyObject>?)->CaseyNetError?)?
+    static public var exceptionHandleOfData:((inout [String:AnyObject]?)->CaseyNetError?)?
     
+    /*
+     公共请求参数体 配置
+     */
+    static public var requestBodyParamCommon:((inout Parameters?)->Void)?
     
+    /*
+     公共请求头参数 配置
+     */
+    static public var requestHeaderParamCommon:((inout HTTPHeaders?)->Void)?
     
     /*
      url 请求地址
@@ -124,6 +132,11 @@ class CaseyNetwork: NSObject {
         
         if responsePaser == .JSON {
             
+            
+            var newParameter = parameters
+            CaseyNetwork.requestBodyParamCommon?(&newParameter)
+            var newHeads = headers
+            CaseyNetwork.requestHeaderParamCommon?(&newHeads)
             Alamofire.request(url, method: method, parameters: parameters, encoding: encoding, headers: headers).responseJSON { (response) in
                 
             

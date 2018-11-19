@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         
-        
+        convertModel()
         
         
     }
@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         dictInfo["parentId"] = ""
         dictInfo["productId"] = "A06"
         
-
+        
 
         
        // request(<#T##url: URLConvertible##URLConvertible#>, method: <#T##HTTPMethod#>, parameters: <#T##Parameters?#>, encoding: <#T##ParameterEncoding#>, headers: <#T##HTTPHeaders?#>)
@@ -48,5 +48,54 @@ class ViewController: UIViewController {
        // request("", method: .post, parameters: dictInfo, encoding: ParameterEncoding(), headers: nil)
         
     }
-}
+    
+    
+    func convertModel()  {
+        
+        
+        var dictInfo:[String:Any] = ["loginName":"ckunlun69"]
+        dictInfo["productId"] = "A06"
+        dictInfo["person"] = ["name":"casey", "age":"22"]
+        dictInfo["testArr"] = ["name","casey", "age"]
+        
+        
 
+        
+        do {
+            
+//            let jsonData = try JSONSerialization.data(withJSONObject: dictInfo, options: .init(rawValue: 0))
+//
+//            let testModel =  try JSONDecoder().decode(TestModel.self, from: jsonData)
+            
+            
+            
+            let testModel = dictInfo.convertModel(TestModel.self)
+            
+            print(testModel?.loginName ?? "error")
+            print(testModel?.productId ?? "error")
+            print(testModel?.person?.name ?? "error")
+            print(testModel?.person?.age ?? "error")
+            print(testModel?.testArr ?? "error")
+            
+            
+            let dd =  ViewController.self
+            let tt = ViewController.classForCoder()
+            
+        }catch {
+            
+        }
+        
+        
+        let arr = [["name":"casey", "age":"22"],["name":"casey2", "age":"26"]]
+        
+        let modelArr = arr.convertModel(Person.self)
+        
+        for personT in modelArr {
+            
+            print(personT.name)
+            print(personT.age)
+        }
+    }
+    
+    
+}

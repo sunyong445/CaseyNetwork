@@ -20,6 +20,9 @@
 		C9D881BD21A004D40047065B /* CaseyNetwork+DownFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D881BC21A004D40047065B /* CaseyNetwork+DownFile.swift */; };
 		C9D881BF21A012260047065B /* CaseyNetError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D881BE21A012260047065B /* CaseyNetError.swift */; };
 		C9D881C121A014720047065B /* CaseyNetException.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D881C021A014720047065B /* CaseyNetException.swift */; };
+		C9D881DF21A2B4370047065B /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D881DE21A2B4370047065B /* TestModel.swift */; };
+		C9D881E121A2B77E0047065B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D881E021A2B77E0047065B /* Person.swift */; };
+		C9D881E721A2BFF10047065B /* Dictionary+ConvertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D881E621A2BFF10047065B /* Dictionary+ConvertModel.swift */; };
 		D41DC7DE595627BC3FE7613A /* Pods_CaseyNetWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23BBBF63A82FB0FD2BA92FFA /* Pods_CaseyNetWork.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +45,9 @@
 		C9D881BC21A004D40047065B /* CaseyNetwork+DownFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CaseyNetwork+DownFile.swift"; sourceTree = "<group>"; };
 		C9D881BE21A012260047065B /* CaseyNetError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseyNetError.swift; sourceTree = "<group>"; };
 		C9D881C021A014720047065B /* CaseyNetException.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseyNetException.swift; sourceTree = "<group>"; };
+		C9D881DE21A2B4370047065B /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
+		C9D881E021A2B77E0047065B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		C9D881E621A2BFF10047065B /* Dictionary+ConvertModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+ConvertModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,9 @@
 			children = (
 				C9D8819D219EB3330047065B /* AppDelegate.swift */,
 				C9D8819F219EB3330047065B /* ViewController.swift */,
+				C9D881DE21A2B4370047065B /* TestModel.swift */,
+				C9D881E021A2B77E0047065B /* Person.swift */,
+				C9D881DD21A2B3E60047065B /* ConvertModel */,
 				C9D881B1219EB88C0047065B /* CaseyNetWork */,
 				C9D881A1219EB3330047065B /* Main.storyboard */,
 				C9D881A4219EB3340047065B /* Assets.xcassets */,
@@ -110,6 +119,14 @@
 				C9D881BC21A004D40047065B /* CaseyNetwork+DownFile.swift */,
 			);
 			path = CaseyNetWork;
+			sourceTree = "<group>";
+		};
+		C9D881DD21A2B3E60047065B /* ConvertModel */ = {
+			isa = PBXGroup;
+			children = (
+				C9D881E621A2BFF10047065B /* Dictionary+ConvertModel.swift */,
+			);
+			path = ConvertModel;
 			sourceTree = "<group>";
 		};
 		FCB48B225AD0A89A1ADEE93F /* Frameworks */ = {
@@ -243,9 +260,12 @@
 				C9D881BD21A004D40047065B /* CaseyNetwork+DownFile.swift in Sources */,
 				C9D881B7219FF2D00047065B /* CaseyNetCache.swift in Sources */,
 				C9D881A0219EB3330047065B /* ViewController.swift in Sources */,
+				C9D881DF21A2B4370047065B /* TestModel.swift in Sources */,
 				C9D8819E219EB3330047065B /* AppDelegate.swift in Sources */,
 				C9D881B3219FE5C40047065B /* CaseyNetwork.swift in Sources */,
+				C9D881E121A2B77E0047065B /* Person.swift in Sources */,
 				C9D881B5219FECEC0047065B /* CaseyNetReqestInfo.swift in Sources */,
+				C9D881E721A2BFF10047065B /* Dictionary+ConvertModel.swift in Sources */,
 				C9D881B9219FFD340047065B /* CaseyNetwork+MultipleTask.swift in Sources */,
 				C9D881C121A014720047065B /* CaseyNetException.swift in Sources */,
 				C9D881BB21A004B10047065B /* CaseyNetwork+Update.swift in Sources */,
