@@ -9,21 +9,29 @@
 import UIKit
 import Alamofire
 
+let URLPath = "http://svr.tuliu.com/center/front/app/util/updateVersions"
+/*versions_id = 1   system_type = 1*/
+
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        testNetWork()
+     //   testNetWorkTwo()
     }
 
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
+
         
-        convertModel()
         
         
     }
+    
+    
     
     
     
@@ -31,21 +39,35 @@ class ViewController: UIViewController {
     func testNetWork()  {
         
         
-        var dictInfo = ["loginName":"ckunlun69"]
+        let param = ["versions_id":"1", "system_type":"1"]
+        CaseyNetwork().requestURLEncodingsPost(URLPath, parameters: param, headers: nil) { (result:VersionModel?, error, cache) in
+            
+            if error != nil {
+                 print(error)
+                
+            }else {
+                print(result)
+            }
+        }
         
-        dictInfo["password"] = "RHUml/pw/tFL9UidorTipieP2JCRS0f58GBJ4Hrmt1RmleE2FTeC5VyVC4aQMIjBC7I00A4zs0kEOIRtqgEDxen0oTRmMlV+cV3rT5A1EArHbG7yaMKBkgltqK8gvDU1mUqjl9zCbF0h9fA1lDecskhiLS86sQoPt5QniAu6nP0="
-        
-        dictInfo["domainName"] = "www.pt-gateway.com"
-        dictInfo["v"] = "2.0.0"
-        dictInfo["parentId"] = ""
-        dictInfo["productId"] = "A06"
+    }
+    
+    func testNetWorkTwo()  {
         
         
-
-        
-       // request(<#T##url: URLConvertible##URLConvertible#>, method: <#T##HTTPMethod#>, parameters: <#T##Parameters?#>, encoding: <#T##ParameterEncoding#>, headers: <#T##HTTPHeaders?#>)
-        
-       // request("", method: .post, parameters: dictInfo, encoding: ParameterEncoding(), headers: nil)
+        let param = ["versions_id":"1", "system_type":"1"]
+        CaseyNetwork().requestURLEncodingsPost(URLPath, parameters: param, headers: nil) { (result, error, cache) in
+            
+            if error != nil {
+                
+            
+                print(error)
+                
+                
+            }else {
+                print(result)
+            }
+        }
         
     }
     

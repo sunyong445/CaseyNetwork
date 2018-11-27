@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofire
 
 extension CaseyNetwork {
 
@@ -36,7 +37,7 @@ extension CaseyNetwork {
                 let newCompletion:((Dictionary<String, Any>?, CaseyNetError?, _ isCache:Bool) -> Void) = {  (dataResponse, error, isCache) in
                     
                     
-                    requestInfo.completionHandler(dataResponse, error, isCache)
+                    requestInfo.completionHandler?(dataResponse, error, isCache)
                     group.leave()
                     
                 }
@@ -51,7 +52,7 @@ extension CaseyNetwork {
                                        readCache: requestInfo.readCache,
                                        cacheDuration: requestInfo.cacheDuration,
                                        completionHandler: newCompletion)
-                
+              
                 
                 
             }
@@ -85,7 +86,7 @@ extension CaseyNetwork {
                 let newCompletion:((Dictionary<String, Any>?, CaseyNetError?, _ isCache:Bool) -> Void) = {  (dataResponse, error, isCache) in
                     
                     
-                    requestInfo.completionHandler(dataResponse, error, isCache)
+                    requestInfo.completionHandler?(dataResponse, error, isCache)
                     semaphore.signal()
                     
                 }
@@ -100,7 +101,7 @@ extension CaseyNetwork {
                                        readCache: requestInfo.readCache,
                                        cacheDuration: requestInfo.cacheDuration,
                                        completionHandler: newCompletion)
-                
+              
                 
                 semaphore.wait()
             }
@@ -110,5 +111,57 @@ extension CaseyNetwork {
         }
         
     }
+  
+  static func requestInfo (_ url: URLConvertible,
+                method: HTTPMethod = .get,
+                parameters: Parameters? = nil,
+                encoding: ParameterEncoding = JSONEncoding.default,
+                headers: HTTPHeaders? = nil,
+                responsePaser: ResonseParseFormat = ResonseParseFormat.JSON,
+                readCache:Bool = false,
+                cacheDuration:Float = 0,
+                completionHandler:@escaping ((Dictionary<String, Any>?, CaseyNetError?, _ isCache:Bool) -> Void)) ->CaseyNetReqestInfo {
     
+    
+    
+    var caseyRequestInfo = CaseyNetReqestInfo.init()
+    caseyRequestInfo.url = url
+    caseyRequestInfo.method = method
+    caseyRequestInfo.parameters = parameters
+    caseyRequestInfo.encoding = encoding
+    caseyRequestInfo.headers = headers
+    caseyRequestInfo.responsePaser = responsePaser
+    caseyRequestInfo.readCache = readCache
+    caseyRequestInfo.cacheDuration = cacheDuration
+    caseyRequestInfo.completionHandler = completionHandler
+    
+    return caseyRequestInfo
+
+    
+  }
+  
+  static func requestInfoJsonPOST (_ url: URLConvertible,
+                    parameters: Parameters?,
+                    completionHandler:@escaping ((Dictionary<String, Any>?, CaseyNetError?, _ isCache:Bool) -> Void)) ->CaseyNetReqestInfo {
+    
+    
+    
+    var caseyRequestInfo = CaseyNetReqestInfo.init()
+    caseyRequestInfo.url = url
+    caseyRequestInfo.method = .post
+    caseyRequestInfo.parameters = parameters
+    caseyRequestInfo.encoding = JSONEncoding.default
+    caseyRequestInfo.headers = nil
+    caseyRequestInfo.responsePaser = .JSON
+    caseyRequestInfo.readCache = false
+    caseyRequestInfo.cacheDuration = 0
+    caseyRequestInfo.completionHandler = completionHandler
+    
+    return caseyRequestInfo
+    
+    
+    
+  }
+  
+  
 }

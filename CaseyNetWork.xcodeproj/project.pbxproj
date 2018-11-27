@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9A9565321ABFF4400D4497D /* CaseyNetWork+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A9565221ABFF4400D4497D /* CaseyNetWork+Codable.swift */; };
+		C9A9565521AC06DA00D4497D /* VersionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A9565421AC06DA00D4497D /* VersionModel.swift */; };
 		C9D8819E219EB3330047065B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D8819D219EB3330047065B /* AppDelegate.swift */; };
 		C9D881A0219EB3330047065B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D8819F219EB3330047065B /* ViewController.swift */; };
 		C9D881A3219EB3330047065B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9D881A1219EB3330047065B /* Main.storyboard */; };
@@ -30,6 +32,8 @@
 		23BBBF63A82FB0FD2BA92FFA /* Pods_CaseyNetWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CaseyNetWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		618F0A7649B9A7E5AD948D88 /* Pods-CaseyNetWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaseyNetWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CaseyNetWork/Pods-CaseyNetWork.debug.xcconfig"; sourceTree = "<group>"; };
 		9F088C53C3712F050B5285D6 /* Pods-CaseyNetWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaseyNetWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-CaseyNetWork/Pods-CaseyNetWork.release.xcconfig"; sourceTree = "<group>"; };
+		C9A9565221ABFF4400D4497D /* CaseyNetWork+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CaseyNetWork+Codable.swift"; sourceTree = "<group>"; };
+		C9A9565421AC06DA00D4497D /* VersionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionModel.swift; sourceTree = "<group>"; };
 		C9D8819A219EB3330047065B /* CaseyNetWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaseyNetWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D8819D219EB3330047065B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9D8819F219EB3330047065B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +99,7 @@
 				C9D8819D219EB3330047065B /* AppDelegate.swift */,
 				C9D8819F219EB3330047065B /* ViewController.swift */,
 				C9D881DE21A2B4370047065B /* TestModel.swift */,
+				C9A9565421AC06DA00D4497D /* VersionModel.swift */,
 				C9D881E021A2B77E0047065B /* Person.swift */,
 				C9D881DD21A2B3E60047065B /* ConvertModel */,
 				C9D881B1219EB88C0047065B /* CaseyNetWork */,
@@ -110,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				C9D881B2219FE5C40047065B /* CaseyNetwork.swift */,
+				C9A9565221ABFF4400D4497D /* CaseyNetWork+Codable.swift */,
 				C9D881C021A014720047065B /* CaseyNetException.swift */,
 				C9D881BE21A012260047065B /* CaseyNetError.swift */,
 				C9D881B4219FECEC0047065B /* CaseyNetReqestInfo.swift */,
@@ -265,6 +271,8 @@
 				C9D881B3219FE5C40047065B /* CaseyNetwork.swift in Sources */,
 				C9D881E121A2B77E0047065B /* Person.swift in Sources */,
 				C9D881B5219FECEC0047065B /* CaseyNetReqestInfo.swift in Sources */,
+				C9A9565521AC06DA00D4497D /* VersionModel.swift in Sources */,
+				C9A9565321ABFF4400D4497D /* CaseyNetWork+Codable.swift in Sources */,
 				C9D881E721A2BFF10047065B /* Dictionary+ConvertModel.swift in Sources */,
 				C9D881B9219FFD340047065B /* CaseyNetwork+MultipleTask.swift in Sources */,
 				C9D881C121A014720047065B /* CaseyNetException.swift in Sources */,
