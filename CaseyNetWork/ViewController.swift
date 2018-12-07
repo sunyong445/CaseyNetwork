@@ -46,7 +46,8 @@ class ViewController: UIViewController {
                  print(error)
                 
             }else {
-                print(result)
+                print(result?.msg)
+                  print(result?.code)
             }
         }
         
@@ -110,12 +111,14 @@ class ViewController: UIViewController {
         
         let arr = [["name":"casey", "age":"22"],["name":"casey2", "age":"26"]]
         
-        let modelArr = arr.convertModel(Person.self)
+        if  let modelArr = arr.convertModel(Person.self) {
         
-        for personT in modelArr {
+            for personT in modelArr  {
+                
+                print(personT.name)
+                print(personT.age)
+            }
             
-            print(personT.name)
-            print(personT.age)
         }
     }
     

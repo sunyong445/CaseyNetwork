@@ -37,7 +37,7 @@ extension CaseyNetwork {
         
         if readCache && cacheDuration > 0 {
             
-            if let cacheData = self._localCache.getCache(url, method: method, parameters: newParameter, encoding: encoding, headers: newHeads) {
+            if let cacheData = self._localCache.getCache(url, method: method, parameters: newParameter, encoding: encoding, headers: newHeads, cacheDuration: cacheDuration) {
                 
                 
                 print("have cacheData: \(cacheData)")
